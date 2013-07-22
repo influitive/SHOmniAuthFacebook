@@ -28,6 +28,6 @@ Pod::Spec.new do |s|
   s.frameworks   = 'Accounts', 'Social'
 
 
-  s.dependency  'Facebook-iOS-SDK', '~> 3.2'
+  s.dependency  'Facebook-iOS-SDK', '~> 3.5'
   s.dependency  'SHOmniAuth',       '~> 0.2.0'
 end
