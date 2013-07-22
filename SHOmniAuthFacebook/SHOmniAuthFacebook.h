@@ -8,7 +8,9 @@
 
 
 #import "SHOmniAuthProvider.h"
-@interface SHOmniAuthFacebook : NSObject
-<SHOmniAuthProvider>
-+(BOOL)handlesOpenUrl:(NSURL *)theUrl;
+@interface SHOmniAuthFacebook : NSObject <SHOmniAuthProvider>
+
++ (BOOL)handlesOpenUrl:(NSURL *)theUrl;
++ (void)omniauthMe:(SHOmniAuthAccountResponseHandler)completionBlock;
+
 @end
